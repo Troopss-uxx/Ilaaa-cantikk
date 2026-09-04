@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hai Laila Khumairoh</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> 
+     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body style="background-image: url(https://images.unsplash.com/photo-1503455637927-730bce8583c0?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);"
+class ="flex justify-center h-screen items-center"
+
+>
+
+ <div class="bg-white border px-10 py-8 border-4 border-gray-300 shadow-lg shadow-pink-300 rounded-xl text-center animate__animated animate__fadeInDown m-8 w-110" 
+ id="kartu" 
+ 
+ >
+ 
+    <h1 class="text-3xl">Maaf ya aku lama buatnya hehe. ini aku buat sekaligu sebagai hadiah dan permintaan maaf ku ke kamu, maaf ya kalo aku buatnya sederhana ga bagus</h1>
+   <h1 class="text-2xl text-blue-500 font-bold animate__animated
+    animate__tada animate__infinite ">Untuk Ilaa sayangku cintaku kelas x-1</h1>
+   <button 
+   class ="p-2 bg-pink-600 text-white rounded mt-5 hover: bg-pin asee-in w-full animate__animated animate__delay-2s animate__pulse " onclick="ubahKartu ()"k-900 transition
+   >
+   klik disini ila! </button>
+ </div>
+<script
+ src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@4.4.0/tsparticles.confetti.bundle.min.js"></script>
+  <script> 
+confetti({
+  particleCount: 150,
+  spread: 70, 
+  origin: { y: .6 }
+});
+let kartu = document.getElementById ("kartu"); 
+function ubahKartu ( ) {
+kartu.innerHTML = ` 
+<img src="ila cantikk.jpg" alt="❤️😍❤️"  
+class="w-28 h-28 object-cover rounded-full mx-auto mb-4 border-4 border-pink-400 shadow-md animate__animated animate__bounceIn">
+<h1 class= "font-semibold text-wrap" animate__animated animate__zoom>Selamat ila, makasih ya udah mau buka kartu ucapan ini.FYI aku buat ini 2 hari nonstop hehe, ini aku buat khusus untuk kamu ya walaupun mungkin masih sederhana dan jelek </h1>
+ <h2 class="p-2 bg-blue-600 text-white rounded mt-5 hover mt-3 animate__animated animate__fadeIn"> - Dari: siapa lagi kalo bukan dari alamm haha
+</h2>
+<button class ="p-2 bg-slate-600 text-white rounded mt-5 hover: bg-slate-900 transition ease-in w-full animate__animated animate__delay-2s animate__pulse " onclick="refresh()"
+>
+Tutup! 
+</button>  
+ 
+`;
+ }
+function refresh () { 
+   location.reload (); 
+
+}
+  </script>
+</body>
+</html>
